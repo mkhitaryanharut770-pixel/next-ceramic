@@ -3,6 +3,8 @@ import { Footer } from "@/components/footer";
 import { BasketSyncer } from "@/components/basket/basket-syncer";
 import { Metadata } from "next";
 
+const baseUrl = ""
+
 export const metadata: Metadata = {
   title: {
     default: "Next Ceramic",
@@ -17,9 +19,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Next Ceramic",
     description: "The best ceramic on the world",
+    url: baseUrl,
+    siteName: "Next Ceramic",
     images: [
       {
-        url: "",
+        url: baseUrl + "/og.jpg",
         width: 1200,
         height: 800,
         alt: "",
@@ -31,7 +35,7 @@ export const metadata: Metadata = {
     description: "The best ceramic on the world",
     images: [
       {
-        url: "",
+        url: baseUrl + "/og.jpg",
         width: 1200,
         height: 800,
         alt: "",
